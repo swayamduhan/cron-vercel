@@ -1,20 +1,17 @@
-name: Trigger Vercel Endpoint
+# name: Trigger Vercel Endpoint
 
-on:
-  schedule:
-    # This cron expression triggers every 30 minutes
-    - cron: '*/30 * * * *'
+# on:
+#   schedule:
+#     - cron: '*/30 * * * *'
 
-jobs:
-  run-cron-job:
-    runs-on: ubuntu-latest
+# jobs:
+#   run-cron-job:
+#     runs-on: ubuntu-latest
 
-    steps:
-      # Step 1: Checkout the code in the repository
-      - name: Checkout code
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      # Step 2: Make the HTTP request to the Vercel API to trigger your function
-      - name: Trigger Vercel Function
-        run: |
-          curl -X GET https://cron-vercel-two.vercel.app/api/test
+#       - name: Trigger Vercel Function
+#         run: |
+#           curl -X GET https://cron-vercel-two.vercel.app/api/test
