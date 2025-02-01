@@ -17,4 +17,4 @@ jobs:
       # Step 2: Make the HTTP request to the Vercel API to trigger your function
       - name: Trigger Vercel Function
         run: |
-          curl -X GET https://your-vercel-app.vercel.app/api/test
+          curl -X GET https://cron-vercel-two.vercel.app/api/test
